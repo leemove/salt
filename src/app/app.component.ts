@@ -8,10 +8,12 @@ import { FirstRunPage } from '../pages';
 import { Settings } from '../providers';
 
 @Component({
-  template: `<ion-menu [content]="content">
+  template: `
+  <ion-menu [content]="content">
+
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
+        <ion-title>页面</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -24,7 +26,8 @@ import { Settings } from '../providers';
     </ion-content>
 
   </ion-menu>
-  <ion-nav #content [root]="rootPage"></ion-nav>`
+  <ion-nav #content [root]="rootPage"></ion-nav>
+  `
 })
 export class MyApp {
   rootPage = FirstRunPage;
